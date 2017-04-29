@@ -1,0 +1,384 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-04-19 17:30:36
+ * @version $Id$
+ */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  position: relative;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+strong {
+  font-weight: normal;
+}
+input,
+button {
+  border: none;
+  outline: none;
+  list-style-type: none;
+}
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+header {
+  background: #1c1f30;
+  text-align: center;
+  font-size: 0.81666667rem;
+  line-height: 1.95rem;
+  color: #fff;
+  font-family: "微软雅黑";
+  padding-top: 0.5rem;
+  position: relative;
+}
+header .cancle {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 2.9rem;
+  font-size: 0.63333333rem;
+  line-height: 1.83333333rem;
+  text-align: right;
+}
+header .cancle i {
+  position: absolute;
+  left: 0.8rem;
+  top: 0.59rem;
+  width: 0.5rem;
+  height: 0.76666667rem;
+  background: url(../image/sprite1.png) no-repeat -0.3rem -0.69rem;
+  background-size: 1.05rem 10rem;
+}
+header .more {
+  position: absolute;
+  right: 0.51666667rem;
+  top: 1.21666667rem;
+  width: 2.05rem;
+  height: 0.63333333rem;
+  background: url(../image/sprite1.png) no-repeat 0 -2.21666667rem;
+  background-size: 1.05rem 10rem;
+}
+.subjectBody {
+  position: absolute;
+  top: 2.45rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.subjectBody .bgContainer {
+  height: 3.3rem;
+}
+.subjectBody .bgContainer img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.subjectBody .inforOne {
+  width: 100%;
+  background: #fff;
+  border-bottom: 3px solid #f0f4f7;
+}
+.subjectBody .inforOne p {
+  padding-left: 1.83333333rem;
+  font-size: 0.8rem;
+  line-height: 2.6rem;
+  color: #2a2a2a;
+  font-weight: bold;
+  position: relative;
+}
+.subjectBody .inforOne .bookInfo,
+.subjectBody .inforOne .postalInfo,
+.subjectBody .inforOne .expressageInfo {
+  position: absolute;
+  left: 0.33333333rem;
+  top: 0.71666667rem;
+  width: 1.43333333rem;
+  height: 1.21666667rem;
+}
+.subjectBody .inforOne .bookInfo {
+  background: url(../image/sprite1.png) no-repeat 0 -3.16666667rem;
+  background-size: 1.05rem 10rem;
+}
+.subjectBody .inforOne .postalInfo {
+  background: url(../image/sprite1.png) no-repeat 0 -4.81666667rem;
+  background-size: 1.05rem 10rem;
+}
+.subjectBody .inforOne .expressageInfo {
+  background: url(../image/sprite1.png) no-repeat 0 -6.58333333rem;
+  background-size: 1.05rem 10rem;
+}
+.subjectBody .inforOne .info {
+  font-size: 0.63333333rem;
+  color: #2a2a2a;
+  padding-left: 2.2rem;
+}
+.subjectBody .inforOne .info p {
+  padding: 0;
+  font-weight: normal;
+}
+.subjectBody .inforOne .expressageState {
+  padding: 0.25rem 0 0.23333333rem 2.5rem;
+  font-size: 0.63333333rem;
+  line-height: 1.05rem;
+  color: #717171;
+}
+.subjectBody .inforOne .readTime {
+  width: 14.81666667rem;
+  margin-top: 0.5rem;
+  font-size: 0.56666667rem;
+  line-height: 1.05rem;
+  letter-spacing: 0.05rem;
+  color: #707070;
+}
+.subjectBody .inforOne .info1 {
+  line-height: 2rem;
+}
+.subjectBody .inforOne .info1 .right {
+  display: inline-block;
+  width: 10rem;
+  color: #a9a9a9;
+  background: #f1f5f8;
+  border: 0.03333333rem solid #dae3ea;
+  border-radius: 0.16666667rem;
+  font-size: 0.56666667rem;
+  line-height: 1.26666667rem;
+  text-indent: 0.1rem;
+}
+.subjectBody .inforOne .info1 input:focus {
+  border-color: #5787f3;
+}
+.subjectBody .inforOne .info4 p {
+  line-height: 2rem;
+}
+.subjectBody .inforOne .info4 p:nth-of-type(4) {
+  margin-top: 0.4rem;
+}
+.subjectBody .inforOne .info4 input {
+  display: inline-block;
+  width: 10rem;
+  color: #a9a9a9;
+  background: #f1f5f8;
+  border: 0.03333333rem solid #dae3ea;
+  border-radius: 0.16666667rem;
+  font-size: 0.56666667rem;
+  line-height: 1.26666667rem;
+  text-indent: 0.1rem;
+}
+.subjectBody .inforOne .info4 .address {
+  vertical-align: top;
+  line-height: 1;
+}
+.subjectBody .inforOne .info4 .authCode {
+  width: 5.9rem;
+}
+.subjectBody .inforOne .info4 .sendAuthCode {
+  width: 3.86666667rem;
+  background: #5787f3;
+  color: #fff;
+}
+.subjectBody .inforOne .info4 .remarkCon {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 10rem;
+  height: 3.63333333rem;
+  border: 1px solid #dae3ec;
+  background: #f1f5f8;
+  border-radius: 0.16666667rem;
+}
+.subjectBody .inforOne .info4 input:focus {
+  border-color: #5787f3;
+}
+.subjectBody .inforOne .info3 {
+  padding-top: 1.1rem;
+}
+.subjectBody .inforOne .info3 .remarId {
+  vertical-align: top;
+}
+.subjectBody .inforOne .info3 .remarkCon {
+  display: inline-block;
+  text-align: left;
+  width: 10rem;
+  height: 3.63333333rem;
+  border: 1px solid #dae3ec;
+  background: #f1f5f8;
+  border-radius: 0.16666667rem;
+}
+.subjectBody .inforOth,
+.subjectBody .inforOne:nth-of-type(3),
+.subjectBody .expressageNum {
+  border: none;
+}
+.editorWrap .addressInp,
+.editorWrap .nameInp,
+.editorWrap .phoneNumberInp {
+  display: block;
+  width: 16.46666667rem;
+  margin: 1.31666667rem auto 0;
+  background: #f1f5f8;
+  font-size: 0.56666667rem;
+  line-height: 1.26666667rem;
+  color: #aaa;
+  text-indent: 0.6rem;
+  border: 0.05rem solid #dae3ea;
+  border-radius: 0.16666667rem;
+}
+.editorWrap input:focus {
+  border-color: #5787f3;
+}
+.editorWrap .authCode {
+  width: 16.46666667rem;
+  margin: 0.65rem auto 0;
+  overflow: hidden;
+}
+.editorWrap .authCode .authCodeInp {
+  display: inline-block;
+  font-size: 0.56666667rem;
+  line-height: 1.26666667rem;
+  color: #aaa;
+  text-indent: 0.6rem;
+  width: 12.46666667rem;
+  border: 0.05rem solid #dae3ea;
+  border-radius: 0.16666667rem;
+  background: #f1f5f8;
+}
+.editorWrap .authCode input:focus {
+  border-color: #5787f3;
+}
+.editorWrap .authCode .sendCode {
+  display: inline-block;
+  font-size: 0.56666667rem;
+  line-height: 1.1rem;
+  color: #fff;
+  padding: 0 0.31666667rem;
+  background: #5787f3;
+  border-radius: 0.16666667rem;
+}
+.editorWrap .saveBtn {
+  display: block;
+  width: 8.51666667rem;
+  background: #5787f3;
+  border-radius: 0.16666667rem;
+  margin: 1.08333333rem auto 0;
+  font-size: 0.83333333rem;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  line-height: 1.76666667rem;
+  color: #fff;
+  text-align: center;
+}
+.btnWrap {
+  position: absolute;
+  left: 0.61666667rem;
+  bottom: 0.33333333rem;
+  font-size: 0.83333333rem;
+  line-height: 1.76666667rem;
+  font-family: Arial;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  background: #5787f3;
+  width: 16.85rem;
+  border-radius: 0.16666667rem;
+}
+.expressageWrap {
+  padding: 1.08333333rem 0 0 0.5rem;
+}
+.expressageWrap img {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.expressageWrap .expressageName {
+  padding-left: 0.5rem;
+  font-size: 0.83333333rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+.expressageNum .expressage_inp {
+  width: 8.85rem;
+  height: 1.26666667rem;
+  font-size: 0.56666667rem;
+  line-height: 1.26666667rem;
+  border: 2px solid #dae3ec;
+  border-radius: 0.16666667rem;
+  background: #f1f5f8;
+}
+.expressageNum input:focus {
+  border-color: #5787f3;
+}
+.expressageNum u {
+  color: #5787f6;
+  font-weight: bold;
+}
+/*login page*/
+.bg_wrap {
+  background: #72B5F7 ;
+  padding-top: 5rem;
+}
+.bg_wrap div {
+  width: 15rem;
+  margin: 5rem auto;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: #fff;
+}
+.bg_wrap div label {
+  display: block;
+}
+.bg_wrap div input {
+  display: inline-block;
+  width: 10rem;
+  color: #a9a9a9;
+  background: #f1f5f8;
+  border: 0.03333333rem solid #dae3ea;
+  border-radius: 0.16666667rem;
+  font-size: 0.56666667rem;
+  line-height: 1.26666667rem;
+  text-indent: 0.1rem;
+  vertical-align: middle;
+}
+.bg_wrap div input:focus {
+  border-color: #5787f3;
+}
+.bg_wrap p {
+  font-size: 0.8rem;
+  line-height: 2rem;
+  color: #FA5858;
+  text-align: center;
+  height: 2rem;
+}
+.bg_wrap .login_btn_wrap {
+  margin: 0 auto;
+  text-align: center;
+}
+.bg_wrap .login_btn_wrap span {
+  display: inline-block;
+  padding: 0 2rem;
+  background: #fff;
+  color: #000;
+  border-radius: 0.16666667rem;
+}
+.bg_wrap .login_btn_wrap .active {
+  background: #73F720;
+  color: #fff;
+}

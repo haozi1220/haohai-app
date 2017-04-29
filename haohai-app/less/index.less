@@ -1,0 +1,392 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-04-19 17:30:36
+ * @version $Id$
+ */
+@maxWidth : 1080;
+@baseRem : @maxWidth/18;
+html,body
+{
+	height: 100%;
+}
+body{
+	margin: 0;
+	position: relative;
+}
+p{
+	padding: 0;
+	margin: 0;
+}
+strong{
+	font-weight: normal;
+}
+input,button{
+	border: none;
+	outline: none;
+	list-style-type: none;
+}
+textarea{
+	border: none;
+	outline: none;
+	resize: none;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+.wrap{
+	width: 100%;
+	height: 100%;
+}
+header{
+	background: #1c1f30;
+	text-align: center;
+	font-size: 49rem/@baseRem;
+	line-height: 117rem/@baseRem;
+	color: #fff;
+	font-family: "微软雅黑";
+	padding-top: 30rem/@baseRem;
+	position: relative;
+	.cancle{
+		position: absolute;
+		left: 0;
+		top: 30rem/@baseRem;
+		width: 174rem/@baseRem;
+		font-size: 38rem/@baseRem;
+		line-height: 110rem/@baseRem;
+		text-align: right;
+		i{
+			position: absolute;
+			left: 48rem/@baseRem;
+			top: 35.4rem/@baseRem;
+			width: 30rem/@baseRem;
+			height: 46rem/@baseRem;
+			background: url(../image/sprite1.png) no-repeat -18rem/@baseRem -41.4rem/@baseRem;
+			background-size: 63rem/@baseRem 600rem/@baseRem;
+		}
+	}
+	.more{
+		position: absolute;
+		right: 31rem/@baseRem;
+		top: 73rem/@baseRem;
+		width: 123rem/@baseRem;
+		height: 38rem/@baseRem;
+		background: url(../image/sprite1.png) no-repeat 0 -133rem/@baseRem;
+		background-size: 63rem/@baseRem 600rem/@baseRem;
+	}
+}
+.subjectBody{
+	position: absolute;
+	top: 147rem/@baseRem;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	.bgContainer{
+		height: 198rem/@baseRem;
+		img{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.inforOne{
+		width: 100%;
+		background: #fff;
+		border-bottom: 3px solid #f0f4f7;
+		p{
+			padding-left: 110rem/@baseRem;
+			font-size: 48rem/@baseRem;
+			line-height: 156rem/@baseRem;
+			color: #2a2a2a;
+			font-weight: bold;
+			position: relative;
+		}
+		.bookInfo,
+		.postalInfo,
+		.expressageInfo{
+			position: absolute;
+			left: 20rem/@baseRem;
+			top: 43rem/@baseRem;
+			width:86rem/@baseRem;
+			height: 73rem/@baseRem;
+		}
+		.bookInfo{
+			background: url(../image/sprite1.png) no-repeat 0 -190rem/@baseRem;
+			background-size: 63rem/@baseRem 600rem/@baseRem;
+		}
+		.postalInfo{
+			background: url(../image/sprite1.png) no-repeat 0 -289rem/@baseRem;
+			background-size: 63rem/@baseRem 600rem/@baseRem;
+		}
+		.expressageInfo{
+			background: url(../image/sprite1.png) no-repeat 0 -395rem/@baseRem;
+			background-size: 63rem/@baseRem 600rem/@baseRem;
+
+		}
+		.info{
+			font-size: 38rem/@baseRem;
+			color: #2a2a2a;
+			padding-left: 132rem/@baseRem;
+			p{
+				padding: 0;
+				font-weight: normal;
+			}
+		}
+		.expressageState{
+			padding:15rem/@baseRem 0 14rem/@baseRem 150rem/@baseRem;
+			font-size: 38rem/@baseRem;
+			line-height: 63rem/@baseRem;
+			color: #717171;
+		}
+		.readTime{
+			width: 889rem/@baseRem;
+			margin-top: 30rem/@baseRem;
+			font-size: 34rem/@baseRem;
+			line-height: 63rem/@baseRem;
+			letter-spacing: 3rem/@baseRem;
+			color: #707070;
+		}
+		.info1{
+			line-height: 120rem/@baseRem;
+			.right{
+				display: inline-block;
+				width: 600rem/@baseRem;
+				color: #a9a9a9;
+				background: #f1f5f8;
+				border: 2rem/@baseRem solid #dae3ea;
+				border-radius: 10rem/@baseRem;
+				font-size: 34rem/@baseRem;
+				line-height: 76rem/@baseRem;
+				text-indent: 6rem/@baseRem;
+			}
+			input:focus{
+				border-color: #5787f3;
+			}
+		}
+		.info4{
+			p{
+				line-height: 120rem/@baseRem;
+			}
+			p:nth-of-type(4){
+				margin-top: 24rem/@baseRem;
+			}
+			input{
+				display: inline-block;
+				width: 600rem/@baseRem;
+				color: #a9a9a9;
+				background: #f1f5f8;
+				border: 2rem/@baseRem solid #dae3ea;
+				border-radius: 10rem/@baseRem;
+				font-size: 34rem/@baseRem;
+				line-height: 76rem/@baseRem;
+				text-indent: 6rem/@baseRem;
+			}
+			.address{
+				vertical-align: top;
+				line-height: 1;
+			}
+			.authCode{
+				width: 354rem/@baseRem;
+			}
+			.sendAuthCode{
+				width: 232rem/@baseRem;
+				background: #5787f3;
+				color: #fff;
+			}
+			.remarkCon{
+				display: inline-block;
+				vertical-align: top;
+				text-align: left;
+				width: 600rem/@baseRem;
+				height: 218rem/@baseRem;
+				border: 1px solid #dae3ec;
+				background: #f1f5f8;
+				border-radius: 10rem/@baseRem;
+			}
+			input:focus{
+				border-color: #5787f3;
+			}
+		}
+		.info3{
+			padding-top: 66rem/@baseRem;
+			.remarId{
+				vertical-align: top;
+			}
+			.remarkCon{
+				display: inline-block;
+				text-align: left;
+				width: 600rem/@baseRem;
+				height: 218rem/@baseRem;
+				border: 1px solid #dae3ec;
+				background: #f1f5f8;
+				border-radius: 10rem/@baseRem;
+			}
+		}
+	}
+	.inforOth,
+	.inforOne:nth-of-type(3),
+	.expressageNum{
+		border: none;
+	}
+}
+.editorWrap{
+	.addressInp,
+	.nameInp,
+	.phoneNumberInp{
+		display: block;
+		width: 988rem/@baseRem;
+		margin: 79rem/@baseRem auto 0;
+		background: #f1f5f8;
+		font-size: 34rem/@baseRem;
+		line-height: 76rem/@baseRem;
+		color: #aaa;
+		text-indent: 36rem/@baseRem;
+		border: 3rem/@baseRem solid #dae3ea;
+		border-radius: 10rem/@baseRem;
+	}
+	input:focus{
+		border-color: #5787f3;
+	}
+	.authCode{
+		width: 988rem/@baseRem;
+		margin: 39rem/@baseRem auto 0;
+		overflow: hidden;
+		.authCodeInp{
+			display: inline-block;
+			font-size: 34rem/@baseRem;
+			line-height: 76rem/@baseRem;
+			color: #aaa;
+			text-indent: 36rem/@baseRem;
+			width: 748rem/@baseRem;
+			border: 3rem/@baseRem solid #dae3ea;
+			border-radius: 10rem/@baseRem;
+			background: #f1f5f8;
+		}
+		input:focus{
+			border-color: #5787f3;
+		}
+		.sendCode{
+			display: inline-block;
+			font-size: 34rem/@baseRem;
+			line-height: 66rem/@baseRem;
+			color: #fff;
+			padding: 0 19rem/@baseRem;
+			background: #5787f3;
+			border-radius: 10rem/@baseRem;
+		}
+	}
+	.saveBtn{
+		display: block;
+		width: 511rem/@baseRem;
+		background: #5787f3;
+		border-radius: 10rem/@baseRem;
+		margin: 65rem/@baseRem auto 0;
+		font-size: 50rem/@baseRem;
+		font-family: "微软雅黑";
+		font-weight: bold;
+		line-height: 106rem/@baseRem;
+		color: #fff;
+		text-align: center;
+	}
+}
+.btnWrap{
+	position: absolute;
+	left: 37rem/@baseRem;
+	bottom: 20rem/@baseRem;
+	font-size: 50rem/@baseRem;
+	line-height: 106rem/@baseRem;
+	font-family: Arial;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	background: #5787f3;
+	width: 1011rem/@baseRem;
+	border-radius: 10rem/@baseRem;
+}
+.expressageWrap{
+	padding:65rem/@baseRem 0 0 30rem/@baseRem;
+	img{
+		display: inline-block;
+		width: 90rem/@baseRem;
+		height: 90rem/@baseRem;
+	}
+	.expressageName{
+		padding-left: 30rem/@baseRem;
+		font-size: 50rem/@baseRem;
+		line-height: 90rem/@baseRem;
+		font-weight: bold;
+		color: #2a2a2a;
+	}
+}
+.expressageNum{
+	.expressage_inp{
+		width: 531rem/@baseRem;
+		height: 76rem/@baseRem;
+		font-size: 34rem/@baseRem;
+		line-height: 76rem/@baseRem;
+		border: 2px solid #dae3ec;
+		border-radius: 10rem/@baseRem;
+		background: #f1f5f8;
+	}
+	input:focus{
+		border-color: #5787f3;
+	}
+	u{
+		color: #5787f6;
+		font-weight: bold;
+	}
+}
+/*login page*/
+.bg_wrap{
+	background: #72B5F7 ;
+	padding-top: 300rem/@baseRem;
+	div{
+		width: 900rem/@baseRem;
+		margin: 300rem/@baseRem auto;
+		font-size: 90rem/@baseRem;
+		line-height: 180rem/@baseRem;
+		color: #fff;
+		label{
+			display: block;
+		}
+		input{
+			display: inline-block;
+			width: 600rem/@baseRem;
+			color: #a9a9a9;
+			background: #f1f5f8;
+			border: 2rem/@baseRem solid #dae3ea;
+			border-radius: 10rem/@baseRem;
+			font-size: 34rem/@baseRem;
+			line-height: 76rem/@baseRem;
+			text-indent: 6rem/@baseRem;
+			vertical-align: middle;
+		}
+		input:focus{
+			border-color: #5787f3;
+		}
+	}
+	p{
+		font-size: 48rem/@baseRem;
+		line-height: 120rem/@baseRem;
+		color: #FA5858;
+		text-align: center;
+		height: 120rem/@baseRem;
+	}
+	.login_btn_wrap{
+		margin: 0 auto;
+		text-align: center;
+		span{
+			display:inline-block;
+			padding: 0 120rem/@baseRem;
+			background: #fff;
+			color: #000;
+			border-radius: 10rem/@baseRem;
+		}
+		.active{
+			background: #73F720;
+			color: #fff;
+		}
+	}
+}

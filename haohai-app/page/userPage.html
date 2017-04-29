@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="../js/baseRem.js"></script>
+		<title>借书</title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+	</head>
+	<body>
+	    <section class="wrap left_active wrapper">
+	    	<header>
+	    		<span class="cancle" id="user_cancle">返回<i></i></span>
+	    		借书
+	    		<span class="more"></span>
+	    	</header>
+	    	<section class="info_wrap">
+	    		<section class="photo_wrap_l">
+	    			<div class="phottos">
+	    				<img src="../image/userPhoto.png"/>
+	    			</div>
+	    			<p class="user_na">宋月月</p>
+	    		</section>
+	    		<ul class="info_list">
+	    			<li class="active">
+	    				<em class="emOne"></em>
+	    				<span class="left">姓名</span><span class="right user_name_1"></span>
+	    				<i class="iOne"></i>
+	    			</li>
+	    			<li>
+	    				<em class="emTwo"></em>
+	    				<span class="left">电话</span><span class="right user_phone_1"></span>
+	    				<i class="iTwo"></i>
+	    			</li>
+	    			<li>
+	    				<em class="emThird"></em>
+	    				<span class="left">收货地址</span><span class="right user_address_1"></span>
+	    				<i class="iThird"></i>
+	    			</li>
+	    			<li>
+	    				<em class="emForth"></em>
+	    				<span class="left">押金</span><u class="right">0元</u>
+	    				<i class="iForth"></i>
+	    			</li>
+	    			<li>
+	    				<em class="emFive"></em>
+	    				<span class="left">借书历史</span>
+	    				<i class="iFive"></i>
+	    			</li>
+	    		</ul>
+	    	</section>
+	    </section>
+	    <!-- editname -->
+	    <section class="wrap wrapper" id="edit_name">
+	    	<header>
+	    		<span class="cancle" id="edit_name_cancle">返回<i></i></span>
+	    		借书
+	    		<span class="more"></span>
+	    	</header>
+	    	<section class="editorWrap">
+	    		<input class="nameInp" placeholder="输入姓名" />
+	    		<button class="saveBtn" id="name_save">保存</button>
+	    	</section>
+	    </section>
+	    <!-- editphone -->
+	    <section class="wrap wrapper" id="edit_phone">
+	    	<header>
+	    		<span class="cancle" id="edit_phone_cancle">返回<i></i></span>
+	    		借书
+	    		<span class="more"></span>
+	    	</header>
+	    	<section class="editorWrap">
+	    		<input class="phoneNumberInp" placeholder="输入手机号" />
+	    		<p class="authCode">
+	    			<input class="authCodeInp" type="text" placeholder="请输入验证码" />
+	    			<button class="sendCode">发送验证码</button>
+	    		</p>
+	    		<button class="saveBtn" id="phone_save">保存</button>
+	    	</section>
+	    </section>
+	    <!-- editaddress -->
+	    <section class="wrap wrapper" id="edit_address">
+	    	<header>
+	    		<span class="cancle" id="edit_address_cancle">返回<i></i></span>
+	    		借书
+	    		<span class="more"></span>
+	    	</header>
+	    	<section class="editorWrap">
+	    		<input class="addressInp" placeholder="输入邮寄地址" />
+	    		<button class="saveBtn" id="address_save">保存</button>
+	    	</section>
+	    </section>
+	</body>
+</html>
+<script type="text/javascript" src="../module/userPage.js"></script>
